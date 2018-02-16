@@ -37,6 +37,12 @@ notebook session with
 jupyter notebook --no-browser --port=9999
 ```
 
+If you need to use FreeSurfer, you should set the environment variable `FS_LICENSE` to point to your `license.txt` file:
+
+```terminal
+export FS_LICENSE=/path/to/license.txt
+```
+
 The container can also be used as a wrapper for commands, for example
 
 ```terminal
