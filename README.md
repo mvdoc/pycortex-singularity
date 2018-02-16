@@ -1,3 +1,4 @@
+ [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/604)
 # pycortex Singularity container
 
 This repository contains a singularity definition file to create a
@@ -9,10 +10,16 @@ container.
 
 ## How to
 
-### 1. Build the container (this assumes Singularity >= 2.4.2)
+### 1. Build the container (this assumes Singularity >= 2.4.2), or pull from singularity hub
 
 ```terminal
 singularity build pycortex.img Singularity
+```
+
+alternatively, the image can be pulled from singularity-hub
+
+```terminal
+singularity pull --name pycortex.img shub://mvdoc/pycortex-singularity
 ```
 
 ### 2. Run it mounting the relevant directories, e.g.
