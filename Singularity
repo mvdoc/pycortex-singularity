@@ -133,6 +133,8 @@ from: debian:jessie
                                                          pymvpa2 \
                                                          libgcc \
                                                          cython \
+                                                         mayavi \
+                                                         traitsui \
       && conda clean -tipsy \
       && /bin/bash -c "source activate neuro27 \
         && pip install --no-cache-dir nipype dipy duecredit mne datalad pprocess Pillow \
